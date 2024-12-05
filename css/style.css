@@ -1082,7 +1082,9 @@ background: #7FBEB9;
     width: 39.5%;
     height: 100%;
 }
-
+.portfolio .column .motionbox .p_category span{
+    padding-left: 317px;
+}
 .portfolio .column .motionbox ul li:nth-child(1){
     width: 37%;
     height: 300px;
@@ -1378,3 +1380,4 @@ footer strong{
 
 }
 footer span{}
+footer span:hover{ color: #f2ffae;}
