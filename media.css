@@ -609,6 +609,9 @@
         .about_me .about_box .page2 .software .skills .s_top {
             margin-bottom: 8px;
         }
+        .intro .container {
+            height:100%;
+        }
         .qualifications_title {
             font-size: 5rem;
         }
@@ -616,8 +619,16 @@
             font-size: 1.2rem;
         }   
         .all_works{
-            height: 5500px;
+        display: none;
         }
+
+        footer{
+            background: #fff;
+        }
+        footer .container{
+            bottom: 30px;
+            color: #000;
+          }
     }
 
     @media screen and (max-width:420px){
