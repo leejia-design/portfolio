@@ -20,7 +20,9 @@ html {
     --kor--font-fam: "Pretendard Variable";
     --num--font-fam: "Slabo 13px", serif;
 }
-
+.wrap{
+    width: 100%;
+}
 body {
     font-family: "Figtree", sans-serif;
     width: 100%;
@@ -31,7 +33,7 @@ body {
 }
 
 .container {
-    width: 1840px;
+    width: 96%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -310,6 +312,7 @@ header ul li .logo_Ani h2 {
 .works .works_bottom .work_img {
     width: 40%;
     height: 100%;
+    margin-top: 2.5%;
 }
 
 .works .works_bottom .work_img>ul {
@@ -336,6 +339,9 @@ header ul li .logo_Ani h2 {
 .works .works_bottom .work_img>ul>li>a {
     width: 100%;
     height: 100%;
+}
+.works .works_bottom .work_img>ul>li>a>img {
+    width: 100%;
 }
 
 .works .works_bottom .wlist {
@@ -371,6 +377,9 @@ header ul li .logo_Ani h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.works .works_bottom .wlist ul li a img {
+display: none;
 }
 
 .works .works_bottom .wlist ul li a .tit_box {
@@ -799,15 +808,12 @@ header ul li .logo_Ani h2 {
 }
 
 .qualifications_title {
-    font-size: 64px;
     color: #E4E4E4;
     letter-spacing: 10px;
     margin-top: 50px;
     text-align: center;
     display: flex;
     gap: 20px;
-    width: 100%;
-    height: 130px;
     font-family: "Tiny5", sans-serif;
     font-size: 10rem;
     width: 100%;
@@ -844,7 +850,7 @@ header ul li .logo_Ani h2 {
 }
 
 .intro {
-    width: 100%; 
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -853,36 +859,39 @@ header ul li .logo_Ani h2 {
     position: relative;
     height:2400px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 100px;
+
 }
-.img_box{ width: 50%; height: 100%; position: relative;}
+.img_box{ width: 50%;  height: 2400px;  display: none;
+ }
 .img_box img {
- position: sticky;
- top:200px;
- margin-top: 150px;
 
 }
 
 .intro .text_box {
-    width: 50%;
+    margin-top: 200px;
+    width: 80%;
     height: 1900px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    margin-right: 40px;
 }
 
 .intro .text_box .q_text {
-    width:50%;  height: 100%;
+    width:100%;  height: 100%;
     flex: 1;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
          
 .intro .text_box .q_text .q_title {
-    width: 100%; height:70px;
-    border: 1px solid #000;
+    width: 30%; height:70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -924,20 +933,22 @@ header ul li .logo_Ani h2 {
 
 .intro .text_box .q_text p {
     width: 1000px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #0e0e0e;
     font-family: var(--kor--font-fam);
     font-weight: 400;
-    text-align: right;
+    text-align: center;
     position: absolute;
-    right: 0; top: 100px;
+    left: 50%; right: 50%;
+    transform: translateX(-50%);
+    margin-top: 200px;
 
 }
 .intro .text_box .q_text:hover p{
 }
 
 /* all works */
-.all_works {
+.all_works{
     width: 100%;
     height: 4000px;
     padding-top: 200px;
@@ -954,11 +965,10 @@ background: #7FBEB9;
     width: 99%; height: 100%;
     margin: 0 auto;
 }
-
 .allworks_btn {
+    width: 280px; height: 70px;
     position: sticky;
     margin-left:40px; 
-    top: 100px;
     z-index: 50; /* 다른 요소 위에 표시 */
 }
 .allworks_btn .a_btn {
@@ -982,7 +992,6 @@ background: #7FBEB9;
     justify-content: center;
     background: rgba(1,1,1,0.2);
     transition: all 0.4s ease;
-    overflow: hidden;
   }
   .allworks_btn .a_btn:after{
     position: absolute;
