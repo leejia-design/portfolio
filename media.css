@@ -1,4 +1,9 @@
 @charset "utf-8";
+@media screen and (max-width:1860px) {
+    .portfolio .column .motionbox .p_category span{
+        padding-left: 20px;
+    }
+}
 /* about me */
 @media screen and (max-width:1600px) {
     .about_me .about_box .pages {
@@ -61,6 +66,10 @@
     .about_me .about_box .page3 .work_experience .w_bottom .line .circle {
         margin-top: 30px;
     }
+    .portfolio .column .motionbox {
+        width: 39.5%;
+        height: 550px;
+    }
 }
 @media screen and (max-width:1570px) {
     .intro .text_box .q_text .q_title h4 {
@@ -91,22 +100,7 @@
         font-size: 9px;
     }
 }
-@media screen and (max-width:1230px) {
-    .about_me .about_box .page3{
-        display: none;
-    }
-    .about_me .about_box .pages {
-        width: 50%;
-        height: 670px;
-    }
-    .contact{
-        display: none;
-    }
-    footer{
-        height: 200px;
-    }
 
-}
 
 @media screen and (max-width:1330px) {
     .works .works_bottom .wlist ul li {
@@ -139,6 +133,10 @@
     .intro .text_box {
         margin-top: 50px;
 }
+.portfolio .column {
+    margin-top: 100px;
+}
+
 .portfolio .column .motionbox .p_category span{
     padding-left: 20px;
 }
@@ -151,9 +149,7 @@
 .portfolio .column .cellreturnbox .p_category span{
     padding-left: 20px;
 }
-.portfolio .column3{
-  display: none;
-}
+
 .portfolio .column .logobox .p_category span:nth-child(1){
     padding-left: 20px;
    }
@@ -185,9 +181,25 @@
             width: 40px;
         }
     }
+    @media screen and (max-width:1230px) {
+        .about_me .about_box .page3{
+            display: none;
+        }
+        .about_me .about_box .pages {
+            width: 50%;
+            height: 670px;
+        }
+        .contact{
+            display: none;
+        }
+        footer{
+            height: 100px;
+        }
+    
+    }
     @media screen and (max-width:1100px){
         .all_works{
-            height: 4500px;
+            height: 3000px;
         }
         .p_category span {
             padding-left: 250px;    color: #fff;
@@ -200,23 +212,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
         }
 
         .portfolio .column {
             width: 100%;
-            height: 1500px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 300px;
+            height: 550px;
         }
         .portfolio .column .p_box{
             width: 96%;
-        }
-        .portfolio .column3{
-            display: none;
         }
         footer{
             font-size: 1rem;
@@ -281,6 +284,10 @@
         width: 100%;
         height: 1000px;
         margin-top: 50px;
+    }
+    .allworks_btn {
+        top: 70px;   
+        height: 80px;
     }
     }
     /* 워크 오버상황 지우고, 사진 나열  */
@@ -367,6 +374,107 @@
     width: 50%;
 }
 }
+
+
+
+    @media screen and (max-width:700px){
+        .main_visual p {
+            padding-top: 80px;
+            line-height: 1.5;
+            font-size: 1.1rem;
+        }
+        .works .works_bottom .wlist ul li.on {
+            color: #000;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #000;
+        }
+        .portfolio {
+
+        }
+        .portfolio .column3{
+            display: none;
+        }
+        .portfolio .column{
+            flex-direction: column;
+            height: auto;
+            margin-top: 0;
+        }
+
+        .all_works{
+            height: 3700px;
+        }
+        .portfolio .column .motionbox {
+            height: auto;
+        }
+
+        .portfolio .column .freesambox {
+            margin-top: 80px;
+            height: auto;
+        }
+        .portfolio .column .cellreturnbox  {
+            margin-top: 80px;
+        }
+        .portfolio .column .printbox {
+            margin-top: 80px;
+        }
+        .portfolio .column .logobox {
+            margin-top: 80px;
+        }
+        .portfolio .column .routinebox {
+            margin-top: 80px; 
+        }
+    }
+/* -------------------------------------------------------- */
+@media screen and (max-width:690px){
+    .works {
+        width: 100%;
+        height: 500px;
+        margin-top: 60px;
+    }
+    .works .works_top .title img {
+        width: 30px;
+    }
+    .works .works_top .title h2 {
+        font-size: 1.2rem;
+    }
+    .works .works_top .see_more_btn a{
+        font-size: 1.1rem;
+        padding-right: 10px;
+    }
+    .works .works_top .see_more_btn img {
+        width: 30px;
+    }
+    .about_me .title {
+        height: 50px; 
+    }
+    .about_me .title img {
+        width: 30px;
+    }
+    .about_me .title h2 {
+        font-size: 1.2rem;
+}
+.works .works_bottom {
+    height: 100%;
+    margin-top: 30px;
+}
+.works .works_bottom .wlist ul li{
+    margin-bottom: 20px;
+}
+.works .works_bottom .wlist ul li a .tit_box span {
+    font-size: 0.8rem;
+    padding-top: 7px;
+    padding-left: 20px;
+}
+.works .works_bottom .wlist ul li a img {
+    display: block;
+     width: 30%;
+    margin-right: 20px;
+    }
+    .qualifications {
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+}
 @media screen and (max-width:630px){
     .intro .text_box .q_text .q_title h4 {
         font-size: 1.3rem;
@@ -379,7 +487,19 @@
 .intro .text_box .q_text .q_title {
     width: 60%;
 }
+
+.portfolio .column3{
+    display: none;
+  }
+
+
 }
+
+
+
+
+
+
 @media screen and (max-width:560px){
     .about_me .about_box .page2 .licence .l_box .gtq p{
         font-size: 0.8rem;
@@ -409,73 +529,6 @@
     width: 70%; height: 60px;
 }
 }
-
-
-/* -------------------------------------------------------- */
-    @media screen and (max-width:690px){
-        .works {
-            width: 100%;
-            height: 500px;
-            margin-top: 60px;
-        }
-        .works .works_top .title img {
-            width: 30px;
-        }
-        .works .works_top .title h2 {
-            font-size: 1.2rem;
-        }
-        .works .works_top .see_more_btn a{
-            font-size: 1.1rem;
-            padding-right: 10px;
-        }
-        .works .works_top .see_more_btn img {
-            width: 30px;
-        }
-        .about_me .title {
-            height: 50px; 
-        }
-        .about_me .title img {
-            width: 30px;
-        }
-        .about_me .title h2 {
-            font-size: 1.2rem;
-    }
-    .works .works_bottom {
-        height: 100%;
-        margin-top: 30px;
-    }
-    .works .works_bottom .wlist ul li{
-        margin-bottom: 20px;
-    }
-    .works .works_bottom .wlist ul li a .tit_box span {
-        font-size: 0.8rem;
-        padding-top: 7px;
-        padding-left: 20px;
-    }
-    .works .works_bottom .wlist ul li a img {
-        display: block;
-         width: 30%;
-        margin-right: 20px;
-        }
-        .qualifications {
-            margin-top: 100px;
-            margin-bottom: 0;
-        }
-    }
-    @media screen and (max-width:700px){
-        .main_visual p {
-            padding-top: 80px;
-            line-height: 1.5;
-            font-size: 1.1rem;
-        }
-        .works .works_bottom .wlist ul li.on {
-            color: #000;
-            border-bottom: 1px solid #000;
-            border-top: 1px solid #000;
-        
-        }
-        
-    }
 
     @media screen and (max-width:550px){
         header{
@@ -544,9 +597,26 @@
             .works .works_bottom .wlist ul li:hover .arrow_black {
               width: 20px;
             }
+            .all_works{
+                height: 3800px;}
+            .allworks_btn {
+                top: 60px;   
+                height: 60px;
 
+            }
+            .allworks_btn .a_btn {
+                width: 200px;
+                height: 40px;}
+                .all_works .allworks_btn .a_btn h2 {
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
             .portfolio .column {
                 margin-top: 80px;
+            }
+            .portfolio .column .freesambox  ul{
+                height: 400px;
             }
     }
 
@@ -618,16 +688,13 @@
         .intro .text_box .q_text .q_title h4 {
             font-size: 1.2rem;
         }   
-        .all_works{
-        display: none;
-        }
 
         footer{
-            background: #fff;
+            background: #0C0C0C;
         }
         footer .container{
-            bottom: 30px;
-            color: #000;
+            bottom: 20px;
+            color: #fff;
           }
     }
 
@@ -680,5 +747,8 @@
     }
     footer p {
         margin-right: 0;
+    }
+    .portfolio .column .freesambox  ul{
+        height: 340px;
     }
     }
